@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Emmanuel Christiansen · Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#inicio">emma<span>.dev</span></a>
+    <button class="icon-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="menu">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <button class="icon-btn" id="themeBtn" aria-label="Cambiar modo claro u oscuro">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="inicio">
+  <div class="hero reveal">
+    <div class="avatar" aria-hidden="true">EC</div>
+    <div>
+      <h1>Hola, soy <em>Emmanuel Christiansen</em></h1>
+      <p>Soy estudiante de Tandil y me gusta mezclar diseño con código. Disfruto armar interfaces claras y ver cómo una idea dibujada en un boceto termina funcionando en el navegador.</p>
+      <div class="chips" id="sobre-mi">
+        <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Backdrop CMS</span><span class="chip">Diseño UI</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="proyectos">
+    <h2 class="reveal">Proyectos del año</h2>
+    <p class="sub reveal">Lo que fui construyendo y aprendiendo en este ciclo.</p>
+    <div class="grid">
+      <article class="card featured reveal">
+        <div class="thumb t1" aria-hidden="true">📰</div>
+        <div class="body">
+          <span class="tag">Proyecto Final</span>
+          <h3>Página de novedades escolares</h3>
+          <p>Sitio de novedades autoadministrable hecho con Backdrop CMS y un tema propio, diseñado a partir de un boceto. La escuela puede publicar noticias sin tocar código.</p>
+          <a class="link" href="#" onclick="return false">Ver proyecto →</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="thumb t2" aria-hidden="true">🗞️</div>
+        <div class="body">
+          <h3>School News</h3>
+          <p>Trabajo en equipo con roles repartidos y entregas por etapas, enfocado en comunicar noticias de la escuela.</p>
+          <a class="link" href="#" onclick="return false">Ver proyecto →</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="thumb t3" aria-hidden="true">🏎️</div>
+        <div class="body">
+          <h3>Juego de F1</h3>
+          <p>Un juego de carreras en el navegador. Estoy rediseñando la forma del circuito para hacerlo más desafiante.</p>
+          <a class="link" href="#" onclick="return false">Ver proyecto →</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="thumb t4" aria-hidden="true">🌱</div>
+        <div class="body">
+          <h3>Emprendimientos productivos</h3>
+          <p>Trabajo de intensificación sobre desarrollo local, con un cuestionario de 17 preguntas a lo largo de dos cuatrimestres.</p>
+          <a class="link" href="#" onclick="return false">Ver trabajo →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact reveal">
+    <h2>¿Charlamos?</h2>
+    <p class="sub">Estoy abierto a colaborar y seguir aprendiendo.</p>
+    <a class="btn" href="mailto:tuemail@ejemplo.com">Escribime</a>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Emmanuel Christiansen · Hecho con HTML, CSS y JS</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
